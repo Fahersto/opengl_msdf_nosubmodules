@@ -2,14 +2,14 @@ cmake_minimum_required (VERSION 3.8)
 
 project ("OpenGL_msdf")
 
-
-include_directories(deps/glad/include)
-
 add_subdirectory(deps/glad)
 add_subdirectory(deps/glm)
 add_subdirectory(deps/glfw)
 add_subdirectory(deps/freetype)
 add_subdirectory(msdf-atlas-gen)
+
+#include_directories(deps/glfw/include)
+include_directories(deps/glad/include)
 
 file(GLOB_RECURSE EXAMPLE_SOURCES LIST_DIRECTORIES true src/*.cpp)
 
