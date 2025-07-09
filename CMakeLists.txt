@@ -5,7 +5,7 @@ project ("OpenGL_msdf")
 add_subdirectory(deps/glad)
 add_subdirectory(deps/glm)
 add_subdirectory(deps/glfw)
-add_subdirectory(deps/freetype)
+#add_subdirectory(deps/freetype)
 add_subdirectory(msdf-atlas-gen)
 
 #include_directories(deps/glfw/include)
