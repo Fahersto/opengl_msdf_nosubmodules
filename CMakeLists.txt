@@ -26,6 +26,7 @@ add_custom_command(TARGET opengl_msdfatlas POST_BUILD
 target_link_libraries(opengl_msdfatlas PRIVATE glfw)
 target_link_libraries(opengl_msdfatlas PRIVATE glad)
 target_link_libraries(opengl_msdfatlas PRIVATE glm)
+target_link_libraries(opengl_msdfatlas PRIVATE freetype)
 target_link_libraries(opengl_msdfatlas PRIVATE msdf-atlas-gen)
 
 target_compile_features(opengl_msdfatlas PRIVATE cxx_std_20)
